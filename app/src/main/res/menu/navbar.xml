@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeNav"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/searchNav"
+        android:icon="@drawable/searchnav"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/createNav"
+        android:icon="@drawable/create"
+        android:title="Create" />
+
+    <item
+        android:id="@+id/profileNav"
+        android:icon="@drawable/account"
+        android:title="Profile" />
+
+</menu>

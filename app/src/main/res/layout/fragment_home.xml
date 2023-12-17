@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/framehome"
+    tools:context=".HomePage">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hello "
+                            android:textSize="22sp"
+                            android:textColor="@color/aqua"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/name_home"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="22sp"
+                            android:textColor="@color/aqua"
+                            android:textStyle="bold"/>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="What would you like to cook for today ?"
+                        android:layout_marginStart="10dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/grey"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    app:shapeAppearanceOverlay="@style/circle1"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/home_photo"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/searchHome"
+                android:background="@drawable/searchbox"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableStart="@drawable/search"
+                android:drawablePadding="10dp"
+                android:text="Search any recipes"
+                android:textColor="@color/grey"
+                android:padding="10dp"
+                android:inputType="none"
+                android:focusable="false"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <com.codebyashish.autoimageslider.AutoImageSlider
+            android:id="@+id/autoImageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            app:ais_auto_sliding="true"
+            app:ais_corner_radius="10"
+            app:ais_indicator_align="@string/center"
+            app:ais_placeholder="@drawable/placeholder_default_loading"
+            app:ais_time_interval="5000"
+            app:ais_title_background="@drawable/text_background" />
+
+
+        <TextView
+            android:id="@+id/member_home"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:id="@+id/category_home"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="4"
+            android:columnCount="4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="13dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/meat"
+                android:layout_width="50dp"
+                android:layout_height="105dp"
+                app:cardCornerRadius="15dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:backgroundTint="#EDE4F0"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:id="@+id/meat_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/meat_bro"
+                        android:layout_width="55dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/meat"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meat"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/seafood"
+                android:layout_width="50dp"
+                android:layout_height="105dp"
+                app:cardCornerRadius="15dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_marginLeft="15dp"
+                app:cardElevation="1dp"
+                android:backgroundTint="#F6E1DD">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/seafood_label"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/seafood"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seafood"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/soup"
+                android:layout_width="50dp"
+                android:layout_height="105dp"
+                app:cardCornerRadius="15dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_marginLeft="15dp"
+                app:cardElevation="1dp"
+                android:backgroundTint="#FFF9E7">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/soup_label"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/soup"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Soup"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bakery"
+                android:layout_width="50dp"
+                android:layout_height="105dp"
+                app:cardCornerRadius="15dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_marginTop="15dp"
+                app:cardElevation="1dp"
+                android:backgroundTint="#FFF9E7">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/bakery_label"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/bakery"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bakery"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lowfat"
+                android:layout_width="50dp"
+                android:layout_height="105dp"
+                app:cardCornerRadius="15dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                app:cardElevation="1dp"
+                android:backgroundTint="#E6F0F5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/lowfat_label"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/lowfat"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Low Fat"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lowcarb"
+                android:layout_width="50dp"
+                android:layout_height="105dp"
+                app:cardCornerRadius="15dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                app:cardElevation="1dp"
+                android:backgroundTint="#F6E1DD">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/lowcarb_label"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/lowcarb"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Low Carb"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/vegetarian"
+                android:layout_width="50dp"
+                android:layout_height="105dp"
+                app:cardCornerRadius="15dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:layout_marginLeft="15dp"
+                app:cardElevation="1dp"
+                android:backgroundTint="#E6F0F5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/vege_label"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/vegetarian"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vegetarian"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewmore"
+                android:layout_width="50dp"
+                android:layout_height="105dp"
+                app:cardCornerRadius="15dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:layout_marginLeft="15dp"
+                app:cardElevation="1dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#E6F0F5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/view_label"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/viewmore"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="More"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Popular Recipes"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/view_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="View all"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/aqua" />
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recipeuserlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="100dp"/>
+
+    </TableLayout>
+
+</ScrollView>

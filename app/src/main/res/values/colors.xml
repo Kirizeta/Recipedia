@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="aqua">#25AE87</color>
+    <color name="yellow">#FDAE57</color>
+    <color name="yellowemas">#FFC107</color>
+    <color name="gray">#EAEAEA</color>
+    <color name="gray_name">#302C2C</color>
+    <color name="transparent">#0000</color>
+    <color name="grey">#6f6f78</color>
+    <color name="ungu">#FFECE3EF</color>
+    <color name="kuning">#F6F0DD</color>
+    <color name="merahoren">#F5E0DC</color>
+    <color name="hijau">#E3EDE7</color>
+    <color name="birumuda">#E5EFF4</color>
+
+</resources>

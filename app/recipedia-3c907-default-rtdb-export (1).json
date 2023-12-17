@@ -1,0 +1,30 @@
+{
+  "Recipe": {
+    "meat": {
+      "as": {
+        "recipe_calories": "233",
+        "recipe_category": "meat",
+        "recipe_direction": "asd",
+        "recipe_ingredient": "asd",
+        "recipe_name": "as",
+        "recipe_photo": "https://firebasestorage.googleapis.com/v0/b/recipedia-3c907.appspot.com/o/Recipe%2F597528017?alt=media&token=a72ae432-0b4b-4871-afe3-8fa1a6908ba5",
+        "recipe_serving": "3",
+        "recipe_time": "2",
+        "recipe_user": "Lianca Valencia",
+        "recipe_video": "vDtCRn7tNik&t=721s"
+      }
+    }
+  },
+  "Registered Users": {
+    "Gdh2ri8r9thIQKjceuwhvhfIFR53": {
+      "email": "081398188202",
+      "mobile": "jackson02@email.com",
+      "name": "Jackson"
+    },
+    "d78uxdDi9uXPmPhu6AXv09msmIM2": {
+      "email": "08123456789",
+      "mobile": "lianca@email.com",
+      "name": "Lianca Valencia"
+    }
+  }
+}

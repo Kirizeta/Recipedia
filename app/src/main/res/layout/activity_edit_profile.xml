@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/mantap"
+    tools:context=".ProfileFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/aqua"
+            android:elevation="2dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/edit_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/arrow_left_white"
+                    android:layout_marginTop="36dp"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="50dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="36dp"
+                    android:text="Edit Profile"
+                    android:paddingRight="110dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/photo_string"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/edit_picture"
+                android:layout_width="122dp"
+                android:layout_height="122dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/profilepic"
+                app:shapeAppearanceOverlay="@style/circle1" />
+
+            <Button
+                android:id="@+id/button_editpicture"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="130dp"
+                android:layout_marginBottom="22dp"
+                android:background="@drawable/button_white"
+                android:textStyle="bold"
+                android:text="Change Picture"
+                android:textColor="@color/aqua"
+                android:textSize="16sp"
+                android:theme="@style/Button_white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="5dp"
+                />
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/button_white"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:paddingLeft="18dp"
+                android:text="Jackson"
+                android:textSize="16sp"
+                android:elevation="2dp"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Email Address"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="5dp"
+                />
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/button_white"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:paddingLeft="18dp"
+                android:text="jackson@email.com"
+                android:textSize="16sp"
+                android:elevation="2dp"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Phone Number"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="5dp"
+                />
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/button_white"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:paddingLeft="18dp"
+                android:text="081398188202"
+                android:textSize="16sp"
+                android:elevation="2dp"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Date of Birth"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="5dp"
+                />
+
+            <EditText
+                android:id="@+id/edit_dob"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/button_white"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:paddingLeft="18dp"
+                android:text="3/3/2003"
+                android:textSize="16sp"
+                android:elevation="2dp"
+                android:inputType="date"
+                android:focusable="false"
+                />
+
+            <Button
+                android:id="@+id/button_saved"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Update Profile"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/bg_pink"
+                android:elevation="5dp"
+                android:backgroundTint="@color/aqua"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="50dp"
+                />
+
+            <ImageView
+                android:id="@+id/vip_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/diamond"
+                android:layout_marginBottom="20dp"/>
+
+            <EditText
+                android:id="@+id/vip_membership"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:theme="@style/textOrange"
+                android:background="@drawable/textbox_orange"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="80dp"
+                android:text="Membership VIP"
+                android:textAlignment="center"
+                android:textColor="@color/yellow"
+                android:textStyle="bold"
+                android:inputType="none"
+                android:focusable="false"
+                />
+
+
+
+        </LinearLayout>
+
+    </TableLayout>
+
+</ScrollView>

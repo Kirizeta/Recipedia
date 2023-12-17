@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Recipedia" parent="Theme.MaterialComponents.Light.NoActionBar" >
+        <item name="colorPrimaryDark">@color/aqua</item>
+        <item name="colorPrimary">@color/aqua</item>
+        <item name="textAppearanceButton">@style/TextAppearance.AppCompat.Button</item>
+        <item name="fontFamily">sans-serif</item>
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Button_white" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="elevation">2dp</item>
+    </style>
+
+    <style name="textOrange" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="elevation">2dp</item>
+    </style>
+
+    <style name="Theme.Recipedia" parent="Base.Theme.Recipedia" />
+</resources>

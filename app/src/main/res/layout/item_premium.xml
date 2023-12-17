@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_viewP"
+    android:layout_width="83dp"
+    android:layout_height="113dp"
+    app:cardBackgroundColor="@color/yellow"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="15dp"
+    app:cardCornerRadius="20dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="8dp">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:elevation="15dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="1.4dp"
+        android:layout_marginTop="1.4dp"
+        >
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="110dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/food_imageP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/seafood"
+                    android:scaleType="centerCrop"
+
+                    />
+
+                <TextView
+                    android:id="@+id/food_nameP"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@+id/food_timeP"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@+id/food_ingredientP"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@+id/food_directionP"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@+id/food_userP"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@+id/food_caloriesP"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@+id/food_serveP"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@+id/food_videoP"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@+id/food_ratingP"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/food_categoryP"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>

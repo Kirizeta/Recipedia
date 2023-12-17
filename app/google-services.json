@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "106487332251",
+    "firebase_url": "https://recipedia-3c907-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "recipedia-3c907",
+    "storage_bucket": "recipedia-3c907.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106487332251:android:b6090860d3b84d1acc753e",
+        "android_client_info": {
+          "package_name": "com.example.recipedia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY_JGMNL22O65EOl1NTexqD86Ce17BuoA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

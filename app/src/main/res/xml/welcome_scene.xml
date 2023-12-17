@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="3000"
+        motion:autoTransition="animateToEnd">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnSwipe motion:maxAcceleration="1" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:id="@+id/imageView"
+            android:layout_width="387dp"
+            android:layout_height="291dp"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="300dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="300dp"/>
+
+        <Constraint
+            android:id="@+id/bglayout"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="1"
+            android:scaleY="1" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/imageView"
+            android:layout_width="387dp"
+            android:layout_height="291dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            android:scaleY="0"
+            android:scaleX="0"
+            motion:transitionEasing="standard"
+            android:visibility="invisible" />
+
+        <Constraint
+            android:id="@+id/bglayout"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:scaleX="10"
+            android:scaleY="10"
+            motion:transitionEasing="cubic(1,0.11,1,0)" />
+    </ConstraintSet>
+</MotionScene>

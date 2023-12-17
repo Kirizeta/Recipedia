@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="15dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/food_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Beef Paprika Pepper"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginLeft="12dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/food_ingredient"
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:text="Beef - Red Paprika - Green Paprika - Onion - Ginger - Oyster Sauce - Soysauce..."
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="12dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/clock"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="12dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/food_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="40 min"
+                        android:textColor="@color/gray_name"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="12dp"/>
+
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/star"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="30dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/food_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.8"
+                        android:textColor="@color/gray_name"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="12dp"/>
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/userpp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="35dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/food_serve"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textColor="@color/gray_name"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="12dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:id="@+id/food_uid"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:id="@+id/food_video"
+                        android:textColor="@color/transparent"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:id="@+id/food_calories"
+                        android:textColor="@color/transparent"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:id="@+id/food_direction"
+                        android:textColor="@color/transparent"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/line"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/userfood"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginLeft="12dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/food_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User 1"
+                        android:textColor="@color/gray_name"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="6dp"
+                        android:paddingBottom="8dp"/>
+
+                    <TextView
+                        android:id="@+id/food_category"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/food_image"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/seafood"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/circular"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
+
+
+
